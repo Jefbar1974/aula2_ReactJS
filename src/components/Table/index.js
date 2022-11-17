@@ -1,11 +1,6 @@
-
-
-
-
 const Head = ({ keys }) => {
   return (
     
-
 <thead>
 
         <tr>
@@ -19,12 +14,10 @@ const Head = ({ keys }) => {
   )
 }
 
-
 const Row = ({ record }) => {
   const keys = Object.keys(record)
   return (
     
-
     <tr key={record.curso}>
       
       {
@@ -48,12 +41,9 @@ export const Table = ({ data }) => {
         {
           data.map(record => <Row record={record} />)
         }
-
-
       </tbody>
 
     </table>
-
 
   )
 }
